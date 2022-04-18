@@ -35,11 +35,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         this.myUserDetailService = myUserDetailService;
     }
 
-    /**自定义密码加密方式*/
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+//    /**自定义密码加密方式*/
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
 
     /**自定义AuthenticationManager，但是AuthenticationManagerBuilder是工厂内部的,本地的*/
     @Override

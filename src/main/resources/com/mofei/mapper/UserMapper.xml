@@ -10,4 +10,8 @@
 	<select id="getRolesByUID" parameterType="Integer" resultType="RoleInfo">
 		select r.* from role r JOIN userrole ur on r.id=ur.rid where r.id=#{uid}
 	</select>
+
+	<update id="updatePassword">
+		update users set password=#{password} where username=#{username}
+	</update>
 </mapper>
